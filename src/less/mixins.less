@@ -1,0 +1,14 @@
+@import (reference) './fonts.less';
+
+.oswald() {
+    font-family: @Oswald_Regular;
+    text-transform: uppercase;
+}
+
+.contrast-color(@background, @color) when (lightness(@color) >= 50%) {
+    color: @color;
+}
+
+.contrast-color(@background, @color) when (lightness(@color) < 50%) {
+    color: white;
+}

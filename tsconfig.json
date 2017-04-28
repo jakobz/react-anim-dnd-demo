@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "sourceMap": true,
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "noImplicitAny": false,
+    "outDir": "./built/",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "allowJs": true,
+    "lib": [
+      "dom",
+      "es2015.promise",
+      "es2015",
+      "es2015.collection",
+      "es2015.core"
+    ],
+    "rootDir": "."
+  },
+  "exclude": [
+    "node_modules",
+    "built"
+  ],
+  "compileOnSave": true
+}

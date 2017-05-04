@@ -1,0 +1,54 @@
+@import (reference) '../common.less';
+
+.all-transition {
+    transition: all 1s;
+}
+
+.two-transitions {
+    transition: opacity 1s 1s, color 1s 2s;
+}
+
+.demo-container {
+    box-sizing: border-box;
+    width: 202px;
+    height: 52px;
+    border: 1px solid #e5e5e5;
+    margin: 10px 0;
+}
+
+.demo-box {
+    background-color: @green-dark;
+    color: @green-dark;
+    width: 200px;
+    height: 50px;
+    opacity: 0;
+    text-align: center;
+    line-height: 50px;
+}
+
+.demo-box-toggled {
+    opacity: 1;
+    color: white;
+}
+
+
+// Non-demo related stuff
+
+.toggle-button {
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    line-height: normal;
+    padding: 6px 18px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #e5e5e5;
+    color: #666;
+    font-size: 14px;
+    font-family: @font-oswald;
+    letter-spacing: .25px;
+    text-transform: uppercase;
+    background: white;
+    border-color: #999;
+    color: #464547;    
+}

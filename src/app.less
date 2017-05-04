@@ -1,5 +1,5 @@
 @import "normalize.css/normalize.css";
-@import (reference) './less/fonts.less';
+@import (reference) './common.less';
 
 :global(html) {
     height: 100%;
@@ -16,5 +16,28 @@
 .app {
     height: 100%;
     display: flex;
+    flex-direction: column;
     font-family: @font-sans;
+}
+
+.menu {
+    display: flex;
+    background-color: @gray-dark;
+}
+
+.menu-item {
+    flex: 0 0 auto;
+    margin: 5px 5px;
+    text-decoration: none;
+    color: #ccc;
+}
+
+.menu-item-active {
+    color: white;
+}
+
+.body {
+    flex: 1 1 0;
+    overflow: scroll;
+    padding: 10px;
 }

@@ -28,5 +28,8 @@
 
     ]
   },
-  devtool: 'eval'
+  devtool: 'eval',
+  devServer: {
+    historyApiFallback: true
+  }
 }

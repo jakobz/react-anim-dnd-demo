@@ -9,6 +9,7 @@
     "preserveConstEnums": true,
     "removeComments": true,
     "allowJs": true,
+    "experimentalDecorators": true,
     "lib": [
       "dom",
       "es2015.promise",

@@ -1,0 +1,28 @@
+@import (reference) '../common.less';
+
+.panel {
+    border: 1px solid #444;
+}
+
+.header {
+    cursor: pointer;
+    padding: 6px 6px;
+    font-size: 14px;
+    font-family: @font-oswald;
+    background-color: #444;
+    color: white;
+    text-transform: uppercase;    
+}
+
+.body-container {
+    overflow: hidden;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.body {   
+    padding: 6px 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0px;
+}
